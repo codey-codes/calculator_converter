@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="queries.css">
+        <title>CodeyCodes | Calc + Conv</title>
+    </head>
+
+    <body>
+        <div class="container-primary">
+            <div class="container-menu">
+                <div class="calculator">Calculator <i class="fas fa-angle-down down-arrow"></i>
+                    <div class="sub-menu">
+                        <div onclick="selectMode('simple')" class="simple-cal">Standard</div>
+                        <div onclick="selectMode('scientific')" class="scientific-cal">Scientific</div>
+                    </div>
+                </div>
+                <div class="converter">Converter <i class="fas fa-angle-down down-arrow"></i>
+                    <div class="sub-menu">
+                        <div onclick="selectMode('length')" class="length">Length</div>
+                        <div onclick="selectMode('mass')" class="mass">Mass</div>
+                        <div onclick="selectMode('temperature')" class="temperature">Temperature</div>
+                        <div onclick="selectMode('speed')" class="speed">Speed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-history">
+                <p>History:</p>
+                <div onclick="clearHistory()" class="clear-history"><i class="fas fa-trash"></i></div>
+                <div onclick="closeHistory()" class="close-history"><i class="fas fa-window-close"></i></div>
+            </div>
+            <div class="selection-div">
+                <input onclick="toggleMenu()" type="checkbox" name="select" id="selection">
+                <label for="selection" class="selection-icon"></label>
+            </div>
+            <div class="container-main">
+                <p class="input-field"></p>
+                <p class="from-unit"></p>
+                <p class="result-field"></p>
+                <p class="to-unit"></p>
+                <div class="buttons">
+                    <div class="buttons-top">
+                        <div onclick="changeInputField('reset')" class="btn-reset">AC</div>
+                        <div onclick="showHistory()" class="history-icon"><i class="fas fa-history"></i></div>
+                        <div onclick="changeInputField('del')" class="btn-del"><i class="fas fa-backspace"></i></div>
+                    </div>
+                    <div class="buttons-left">
+                        <div onclick="changeInputField('clear')" class="btn-clear">clr</div>
+                        <div onclick="changeInputField(0)" class="btn-0">0</div>
+                        <div onclick="changeInputField('dot')" class="btn-dot">.</div>
+                    </div>
+                    <div class="buttons-right">
+                    </div>
+                    <div class="buttons-bottom">
+                        <div onclick="changeInputField('equals')" class="btn-equals">&#61;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="index.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+@media only screen and (max-width: 500px) {
+    .container-primary {
+        width: 100%;
+    }
+
+    .container-menu {
+        width: 320px;
+    }
+
+    .calculator, .converter {
+        font-size: 1.6rem;
+    }
+
+    .container-history {
+        width: 320px;
+    }
+
+    .container-history p {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+
+    .selection-icon::before {
+        height: 3px;
+        top: 11px;
+    }
+    .selection-icon::after {
+        bottom: 11px;
+        height: 3px;
+    }
+
+    .buttons-top > div,
+    .buttons-bottom > div {
+        font-size: 1.6rem;
+    }
+
+    .buttons-right > div,
+    .buttons-left > div {
+        width: 75px;
+        font-size: 1.6rem;
+    }
+
+    .simple-operations > div,
+    .power-operations > div,
+    .trig-inv-operations > div:not(.tan-inv),
+    .trig-operations > div:not(.tan) {
+        font-size: 1.2rem;
+    }
+
+    .tan, .tan-inv {
+       display: none;
+    }
+
+    .from-text, .to-text, .start, select, option { 
+        -webkit-box-flex: 0; 
+            -ms-flex: 0 0 60px; 
+                flex: 0 0 60px;
+        font-size: 1.2rem;
+    }
+
+    .from-unit, .to-unit {
+        font-size: 1.2rem;
+    }
+
+    .input-field, .result-field {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .buttons-right > div,
+    .buttons-left > div {
+        width: 55px;
+    }
+
+}
+@media only screen and (max-height: 620px) {
+    .buttons-right > div,
+    .buttons-left > div {
+        height: 20%;
+    }
+
+    .buttons-right > div,
+    .buttons-left > div {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-height: 470px) {
+    .buttons-top > div,
+    .buttons-bottom > div {
+        height: 80%;
+        font-size: 1.9rem;
+    }
+
+    .buttons-top > div {
+        width: 50%;
+    }
+
+    .buttons {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .tan, .tan-inv,
+    .buttons-right > div,
+    .buttons-left > div, 
+    .simple-operations > div,
+    .power-operations > div,
+    .trig-inv-operations > div:not(.tan-inv),
+    .trig-operations > div:not(.tan),
+    select, .start, .from-text, .to-text, .from-unit, .to-unit {
+        font-size: 1.4rem;
+    }
+
+    .calculator, .converter {
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .down-arrow {
+        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media only screen and (max-height: 380px) {
+    .buttons-top > div,
+    .buttons-bottom > div {
+        height: 75%;
+        font-size: 1.6rem;
+    }
+
+    .container-menu {
+        padding: 1.5rem 0 0 5rem;
+    }
+
+    .input-field, .result-field {
+        font-size: 2.5rem;
+    }
+
+    .buttons-top > div,
+    .buttons-bottom > div {
+        font-size: 1.2rem;
+        border: .5px solid #ddd;
+    }
+
+    .tan, .tan-inv,
+    .buttons-left > div, 
+    .power-operations > div,
+    .trig-inv-operations > div:not(.tan-inv),
+    .trig-operations > div:not(.tan),
+    select, .start, .from-text, .to-text, .from-unit, .to-unit {
+        font-size: 1.2rem;
+    }
+}
+
+
